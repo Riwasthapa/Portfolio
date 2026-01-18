@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Riwas Thapa</h1>
+    <p>Data Analyst | ML Enthusiast</p>
+    <button id="themeToggle">🌙</button>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a data-focused developer interested in machine learning,
+        analytics, and real-world problem solving.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <span>Python</span>
+        <div class="bar"><div class="fill" style="width: 80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>SQL</span>
+        <div class="bar"><div class="fill" style="width: 70%"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>Machine Learning</span>
+        <div class="bar"><div class="fill" style="width: 65%"></div></div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>House Price Prediction</h3>
+        <p>Regression model using Python & scikit-learn.</p>
+        <a href="#">GitHub</a>
+    </div>
+
+    <div class="project">
+        <h3>Arecanut Ripeness Classification</h3>
+        <p>CNN-based image classification using MobileNet.</p>
+        <a href="#">GitHub</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="formStatus"></p>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

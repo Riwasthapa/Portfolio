@@ -1,0 +1,88 @@
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --accent: #0077ff;
+}
+
+body.dark {
+    --bg: #121212;
+    --text: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: var(--accent);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.bar {
+    background: #ddd;
+    height: 10px;
+}
+
+.fill {
+    background: var(--accent);
+    height: 10px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
